@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rabab Okasha · Data Scientist</title>
+<meta name="description" content="Portfolio of Rabab Okasha, aspiring data scientist focused on AI, machine learning and data analysis. Based in Giza, Egypt.">
+<meta property="og:title" content="Rabab Okasha · Data Scientist">
+<meta property="og:description" content="Machine learning, clustering, computer vision and analytical problem-solving.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f8fafc;--surface:#fff;--ink:#0f172a;--muted:#475569;--line:#e2e8f0;--pri:#1d4ed8;--pri-ink:#fff;--acc:#4f46e5;--tag:#eff6ff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#090d16;--surface:#111827;--ink:#f8fafc;--muted:#94a3b8;--line:#1f2937;--pri:#3b82f6;--pri-ink:#090d16;--acc:#818cf8;--tag:#1e293b}}
+:root[data-theme="dark"]{--bg:#090d16;--surface:#111827;--ink:#f8fafc;--muted:#94a3b8;--line:#1f2937;--pri:#3b82f6;--pri-ink:#090d16;--acc:#818cf8;--tag:#1e293b}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 Inter,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.15;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--pri);color:var(--pri-ink);padding:8px 14px;border-radius:6px;z-index:99}.skip:focus{left:8px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+section{padding:88px 0;border-top:1px solid var(--line)}
+.eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);font-weight:600;margin-bottom:10px}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:36px}
+header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{font-family:Fraunces,serif;font-weight:600;font-size:1.15rem;text-decoration:none}
+.links{display:flex;gap:20px;align-items:center;list-style:none;margin:0;padding:0;font-size:.92rem}
+.links a{text-decoration:none;color:var(--muted)}.links a:hover{color:var(--ink)}
+.btn{display:inline-block;padding:11px 20px;border-radius:8px;font-weight:600;font-size:.95rem;text-decoration:none;border:1.5px solid var(--pri);background:var(--pri);color:var(--pri-ink);cursor:pointer;font-family:inherit;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}.btn.ghost:hover{border-color:var(--ink)}
+.icon-btn{background:none;border:1px solid var(--line);color:var(--ink);width:40px;height:40px;border-radius:8px;cursor:pointer;font-size:1.05rem}
+.menu-btn{display:none}
+.hero{padding:96px 0 88px;border:0}
+.hero-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.4rem,6vw,4rem);margin:8px 0 18px}
+.hero h1 em{color:var(--pri);font-style:normal}
+.hero p{max-width:52ch;color:var(--muted);font-size:1.1rem}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.photo{aspect-ratio:1/1;width:100%;max-width:320px;margin:0 auto;border-radius:50%;border:3px solid var(--line);background:linear-gradient(160deg,var(--tag),var(--surface));display:grid;place-items:center;text-align:center;color:var(--muted);font-size:.85rem;padding:20px;position:relative;overflow:hidden}
+.photo b{font-family:Fraunces,serif;font-size:4.5rem;color:var(--pri);display:block;line-height:1}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:48px}
+.about p{margin:0 0 16px;color:var(--muted)}
+dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 20px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;align-self:start;font-size:.95rem}
+dt{color:var(--muted)}dd{margin:0;overflow-wrap:anywhere}
+.ph{color:var(--acc);font-style:italic}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px}
+.card h3{font-size:1.15rem;margin-bottom:14px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.tags li{background:var(--tag);border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-size:.84rem}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:-12px 0 28px}
+.chip{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;padding:6px 16px;cursor:pointer;font:inherit;font-size:.88rem}
+.chip[aria-pressed="true"]{background:var(--pri);color:var(--pri-ink);border-color:var(--pri)}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,border-color .25s}
+.proj:hover{transform:translateY(-4px);border-color:var(--pri)}
+.thumb{aspect-ratio:16/10;background:linear-gradient(135deg,var(--tag),var(--line));display:grid;place-items:center;color:var(--muted);font-size:.8rem;text-align:center;padding:12px;position:relative}
+.thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.proj-body{padding:22px;display:flex;flex-direction:column;gap:12px;flex:1}
+.proj h3{font-size:1.2rem}.proj p{margin:0;color:var(--muted);font-size:.94rem}
+.proj .tags{margin-top:auto}
+.proj-links{display:flex;gap:16px;font-weight:600;font-size:.9rem}
+.proj-links a{color:var(--pri)}
+.timeline{list-style:none;margin:0;padding:0 0 0 26px;border-left:2px solid var(--line);display:grid;gap:28px}
+.timeline li{position:relative}
+.timeline li::before{content:"";position:absolute;left:-33px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--pri);border:3px solid var(--bg)}
+.timeline h3{font-size:1.15rem}.timeline .meta{color:var(--muted);font-size:.9rem;margin:2px 0 6px}
+.timeline ul{margin:8px 0 0 16px;padding:0;color:var(--muted);font-size:.95rem;display:grid;gap:6px}
+.services{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.services .card{padding:20px}.services .num{font-family:Fraunces,serif;color:var(--acc);font-size:1.3rem}
+.services h3{font-size:1rem;margin-top:8px}
+form{display:grid;gap:16px;max-width:560px}
+label{font-weight:500;font-size:.92rem;display:block;margin-bottom:6px}
+input,textarea{width:100%;font:inherit;padding:11px 14px;border-radius:8px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink)}
+input[aria-invalid="true"],textarea[aria-invalid="true"]{border-color:var(--acc)}
+.err{color:var(--acc);font-size:.84rem;min-height:1.1em;margin-top:4px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.contact ul{list-style:none;padding:0;margin:0 0 20px;display:grid;gap:10px}
+.note{font-size:.84rem;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:48px 0 32px;font-size:.92rem;color:var(--muted)}
+.foot{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:32px}
+footer h3{font-size:1rem;color:var(--ink);margin-bottom:10px}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.copy{margin-top:32px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}.reveal{opacity:1;transform:none}}
+@media(max-width:900px){.hero-grid,.about,.contact,.foot{grid-template-columns:1fr}.skills,.projects{grid-template-columns:1fr 1fr}.services{grid-template-columns:1fr 1fr}.photo{max-width:280px}}
+@media(max-width:680px){section{padding:64px 0}.skills,.projects,.services{grid-template-columns:1fr}.menu-btn{display:inline-block}
+.links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;padding:16px 24px;gap:14px}.links.open{display:flex}.nav-cta{display:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<div class="wrap"><nav aria-label="Main">
+<a class="logo" href="#home">Rabab Okasha</a>
+<ul class="links" id="links">
+<li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li><li><a href="#education">Education</a></li><li><a href="#projects">Projects</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Contact</a></li>
+</ul>
+<div style="display:flex;gap:10px;align-items:center">
+<a class="btn nav-cta" href="#contact">Let's Work Together</a>
+<button class="icon-btn" id="theme" aria-label="Toggle dark mode">◐</button>
+<button class="icon-btn menu-btn" id="menu" aria-label="Open menu" aria-expanded="false" aria-controls="links">☰</button>
+</div></nav></div>
+</header>
+
+<main id="main">
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div class="reveal">
+<div class="eyebrow">Data Scientist · Giza, Egypt</div>
+<h1>I turn data into <em>useful insights</em>.</h1>
+<p>Aspiring data scientist focused on AI, machine learning and analytical problem-solving. I break down complex problems, find patterns in data, and build data-driven solutions that help organizations decide with confidence.</p>
+<div class="cta"><a class="btn" href="#projects">View My Projects</a><a class="btn ghost" href="Rabab Mohamed Newest CV.pdf" download>Download CV</a><a class="btn ghost" href="#contact">Let's Talk</a></div>
+</div>
+<div class="photo reveal" role="img" aria-label="Portrait placeholder for Rabab Okasha"><img src="RababMohamed_photo.jpeg" alt="Portrait of Rabab Okasha" onerror="this.remove()"><div><b>RO</b>Add RababMohamed_photo.jpeg next to this file</div></div>
+</div></section>
+
+<section id="about"><div class="wrap">
+<div class="eyebrow">About</div><h2>Curious, analytical, and goal-driven</h2>
+<div class="about">
+<div class="reveal">
+<p>Aspiring Data Scientist with a strong interest in AI, machine learning, and analytical problem-solving. I enjoy breaking down complex problems, finding patterns in data, and turning information into useful insights.</p>
+<p>My goal is to develop strong expertise in data science and use data-driven solutions to solve real-world problems and help organizations make smarter decisions.</p>
+</div>
+<dl class="reveal">
+<dt>Name</dt><dd>Rabab Okasha</dd><dt>Role</dt><dd>Data Scientist</dd><dt>Location</dt><dd>Giza, Egypt</dd>
+<dt>Email</dt><dd><a href="mailto:rababokasha123@gmail.com">rababokasha123@gmail.com</a></dd>
+<dt>Studying</dt><dd>Data Science, Cairo University (2023–2027)</dd>
+<dt>Languages</dt><dd class="ph">Arabic (Native) - English (Fluent)</dd>
+</dl></div></div></section>
+
+<section id="skills"><div class="wrap">
+<div class="eyebrow">Skills</div><h2>Tools I work with</h2>
+<div class="skills">
+<div class="card reveal"><h3>Programming languages</h3><ul class="tags"><li>Python</li><li>C++</li><li>Java</li><li>JavaScript</li></ul></div>
+<div class="card reveal"><h3>Databases</h3><ul class="tags"><li>SQL</li><li>MySQL</li></ul></div>
+<div class="card reveal"><h3>Tools</h3><ul class="tags"><li>Jupyter</li><li>GitHub</li><li>VS Code</li><li>MySQL</li></ul></div>
+</div></div></section>
+
+<section id="experience"><div class="wrap">
+<div class="eyebrow">Experience</div><h2>Training and research</h2>
+<ol class="timeline">
+<li class="reveal">
+  <h3>Data Scientist Trainee</h3>
+  <div class="meta">Digital Egypt Pioneers Initiative (DEPI) · <span class="ph">Jul 2026 - Present</span></div>
+  <ul>
+    <li>Developing practical skills in Python, SQL, data analysis, and machine learning through hands-on training and projects.</li>
+    <li>Working with real-world datasets to perform data cleaning, preprocessing, exploratory data analysis (EDA), and visualization.</li>
+    <li>Applying machine learning techniques to build, evaluate, and improve predictive models.</li>
+  </ul>
+</li>
+<li class="reveal">
+  <h3>AI Research Intern</h3>
+  <div class="meta">Nile University · <span class="ph">Jul 2026 - Aug 2026</span></div>
+  <ul>
+    <li>Investigated the generalizability of image-based methodologies for PCOS detection across ovarian ultrasound datasets from diverse populations.</li>
+    <li>Curated and preprocessed normal and PCOS ovarian image datasets for comparative analysis.</li>
+    <li>Contributed to the preparation and documentation of findings for a research manuscript.</li>
+  </ul>
+</li>
+</ol></div></section>
+
+<section id="education"><div class="wrap">
+<div class="eyebrow">Education</div><h2>Academic background</h2>
+<div class="card reveal">
+  <h3>BSc in Data Science</h3>
+  <p style="margin:6px 0">Cairo University, Faculty of Computing and Artificial Intelligence</p>
+  <p class="note" style="margin:0">Sep 2023 – Jul 2027 (expected)</p>
+</div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<div class="eyebrow">Projects</div><h2>Selected work</h2>
+<div class="filters" role="group" aria-label="Filter projects by technology">
+<button class="chip" aria-pressed="true" data-f="all">All</button><button class="chip" aria-pressed="false" data-f="Neural Networks">Neural Networks</button><button class="chip" aria-pressed="false" data-f="Clustering">Clustering</button><button class="chip" aria-pressed="false" data-f="Computer Vision">Computer Vision</button>
+</div>
+<div class="projects" id="grid"></div>
+<p class="note" id="empty" hidden>No projects match this filter.</p>
+</div></section>
+
+<section id="services"><div class="wrap">
+<div class="eyebrow">Services</div><h2>How I can help</h2>
+<div class="services">
+<div class="card reveal"><span class="num">01</span><h3>Data cleaning</h3></div>
+<div class="card reveal"><span class="num">02</span><h3>Data preprocessing</h3></div>
+<div class="card reveal"><span class="num">03</span><h3>Data visualization</h3></div>
+<div class="card reveal"><span class="num">04</span><h3>Statistical analysis</h3></div>
+<div class="card reveal"><span class="num">05</span><h3>Machine learning models</h3></div>
+</div></div></section>
+
+<section id="achievements"><div class="wrap">
+<div class="eyebrow">Certifications</div><h2>Achievements</h2>
+<div class="card reveal" style="max-width:480px">
+  <h3>NU Research Certificate</h3>
+  <p class="note" style="margin:6px 0 12px 0">Nile University Research Internship Certificate</p>
+  <div style="aspect-ratio:16/10; border-radius:8px; overflow:hidden; border:1px solid var(--line); position:relative; background:var(--tag);">
+    <img src="NU_Research_cetificate.jpg" alt="NU Research Certificate" style="width:100%; height:100%; object-fit:cover;" onerror="this.parentElement.innerHTML='<span style=\'display:grid;place-items:center;height:100%;color:var(--muted);font-size:0.85rem;\'>Certificate image not found</span>'">
+  </div>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+<div><div class="eyebrow">Contact</div><h2>Let's work together</h2>
+<ul>
+<li>Email: <a href="mailto:rababokasha123@gmail.com">rababokasha123@gmail.com</a></li>
+<li><a href="https://www.linkedin.com/in/rabab-okasha" target="_blank" rel="noopener">LinkedIn</a></li>
+<li><a href="https://github.com/Rabab-Okasha" target="_blank" rel="noopener">GitHub</a></li>
+</ul></div>
+<form id="form" novalidate>
+<div><label for="n">Name</label><input id="n" name="name" autocomplete="name" required><div class="err" id="e-n" role="alert"></div></div>
+<div><label for="e">Email</label><input id="e" name="email" type="email" autocomplete="email" required><div class="err" id="e-e" role="alert"></div></div>
+<div><label for="s">Subject</label><input id="s" name="subject" required><div class="err" id="e-s" role="alert"></div></div>
+<div><label for="m">Message</label><textarea id="m" name="message" rows="5" required></textarea><div class="err" id="e-m" role="alert"></div></div>
+<button class="btn" type="submit">Send message</button>
+<p class="note" id="status" role="status"></p>
+<p class="note">Integration needed: this form opens your email app. To send directly, connect a service such as Formspree or EmailJS in the submit handler.</p>
+</form></div></section>
+</main>
+
+<footer><div class="wrap">
+<div class="foot">
+<div><h3>Rabab Okasha</h3><p style="margin:0">Data Scientist. Machine learning, data analysis and visualization.</p></div>
+<div><h3>Navigate</h3><ul><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li></ul></div>
+<div><h3>Connect</h3><ul><li><a href="mailto:rababokasha123@gmail.com">Email</a></li><li><a href="https://www.linkedin.com/in/rabab-okasha" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://github.com/Rabab-Okasha" target="_blank" rel="noopener">GitHub</a></li></ul></div>
+</div>
+<div class="copy"><span>© <span id="yr"></span> Rabab Okasha. Giza, Egypt.</span><a href="#home">Back to top ↑</a></div>
+</div></footer>
+
+<script>
+const P=[
+{n:"Breast Cancer Prediction Model",d:"Built a classification model to predict whether tumors are benign or malignant using medical dataset features. Compared Decision Tree, Naïve Bayes, Rule Induction and Neural Network models. The Neural Network achieved the top accuracy of 97.08%.",t:["Python","scikit-learn","Neural Networks"],c:"Neural Networks",g:"https://github.com/Malakhassan8/Breast-cancer-prediction",l:"https://breast-cancer-prediction-8v3gtkney8bkrfcslpbtft.streamlit.app/",i:"ChatGPT Image Oct 7, 2026, 01_52_49 PM.png"},
+{n:"Housing Clustering Analysis",d:"Applied K-Means and DBSCAN clustering to housing data, using PCA for dimensionality reduction and visualization. Identified meaningful housing segments and evaluated cluster quality with silhouette scores.",t:["Python","K-Means","DBSCAN","PCA"],c:"Clustering",g:"https://github.com/Rabab-Okasha/Housing_Clustering_Analysis",i:"ChatGPT Image Oct 7, 2026, 01_47_45 PM.png"},
+{n:"Automated Material Classification System",d:"Classifies images using computer vision and machine learning, processing live camera frames in real time with Python, Support Vector Machine and KNN.",t:["Python","SVM","KNN"],c:"Computer Vision",g:"https://github.com/Rabab-Okasha/Material_Classification_System",i:"ChatGPT Image Oct 7, 2026, 01_44_36 PM.png"}];
+const $=s=>document.querySelector(s),grid=$("#grid");
+const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function render(f){
+ const L=P.filter(p=>f==="all"||p.c===f);
+ grid.innerHTML=L.map(p=>`<article class="proj reveal in"><div class="thumb"><span>Project image: add file<br>${esc(p.i)}</span><img src="${encodeURI(p.i)}" alt="Screenshot of ${esc(p.n)}" loading="lazy" onerror="this.remove()"></div>
+ <div class="proj-body"><h3>${esc(p.n)}</h3><p>${esc(p.d)}</p><ul class="tags">${p.t.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>
+ <div class="proj-links"><a href="${p.g}" target="_blank" rel="noopener">GitHub ↗</a>${p.l?`<a href="${p.l}" target="_blank" rel="noopener">Live demo ↗</a>`:""}</div></div></article>`).join("");
+ $("#empty").hidden=L.length>0;
+}
+render("all");
+document.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{document.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",x===b));render(b.dataset.f)});
+// theme
+const root=document.documentElement;
+try{const s=localStorage.getItem("theme");if(s)root.dataset.theme=s}catch(e){}
+$("#theme").onclick=()=>{const dark=root.dataset.theme?root.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;const v=dark?"light":"dark";root.dataset.theme=v;try{localStorage.setItem("theme",v)}catch(e){}};
+// menu
+const mb=$("#menu"),lk=$("#links");
+mb.onclick=()=>{const o=lk.classList.toggle("open");mb.setAttribute("aria-expanded",o)};
+lk.addEventListener("click",e=>{if(e.target.tagName==="A"){lk.classList.remove("open");mb.setAttribute("aria-expanded","false")}});
+// reveal
+if("IntersectionObserver"in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll(".reveal").forEach(el=>io.observe(el))}else document.querySelectorAll(".reveal").forEach(el=>el.classList.add("in"));
+$("#yr").textContent=new Date().getFullYear();
+// form
+$("#form").addEventListener("submit",e=>{
+ e.preventDefault();const f=e.target;let ok=true;
+ const rules=[["n","Please enter your name."],["e","Please enter a valid email address."],["s","Please add a subject."],["m","Please write a message (at least 10 characters)."]];
+ rules.forEach(([id,msg])=>{const el=$("#"+id),v=el.value.trim();
+  let bad=!v||(id==="e"&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v))||(id==="m"&&v.length<10);
+  el.setAttribute("aria-invalid",bad);$("#e-"+id).textContent=bad?msg:"";if(bad)ok=false});
+ if(!ok){$("#status").textContent="";f.querySelector('[aria-invalid="true"]').focus();return}
+ const q=`mailto:rababokasha123@gmail.com?subject=${encodeURIComponent($("#s").value)}&body=${encodeURIComponent($("#m").value+"\n\n— "+$("#n").value+" ("+$("#e").value+")")}`;
+ $("#status").textContent="Opening your email app…";location.href=q;
+});
+</script>
+</body>
+</html>

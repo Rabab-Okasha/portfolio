@@ -1,83 +1,27 @@
-# Rabab Okasha Portfolio
+# Rabab Okasha: Portfolio
 
-A modern, responsive portfolio website for Rabab Okasha, designed as a polished professional online resume and project showcase.
+Static site. No install or build step needed.
 
-## Stack
-- React
-- TypeScript
-- Vite
-- CSS custom properties for theming
+## Folder structure
+Put these files in the SAME folder as index.html:
 
-## Local setup
+- index.html
+- RababMohamed_photo.jpeg
+- Rabab Mohamed Newest CV.pdf
+- ChatGPT Image Oct 7, 2026, 01_52_49 PM.png  (Breast Cancer project)
+- ChatGPT Image Oct 7, 2026, 01_47_45 PM.png  (Housing Clustering project)
+- ChatGPT Image Oct 7, 2026, 01_44_36 PM.png  (Material Classification project)
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Start the development server:
-   ```bash
-   npm run dev
-   ```
-3. Open the local URL shown in the terminal, usually:
-   ```bash
-   http://localhost:5173/
-   ```
+## Run locally
+Option 1: double-click index.html.
+Option 2 (local server): run `python -m http.server 8000` in this folder, then open http://localhost:8000
 
-## Production build
+## Edit content
+Open index.html in VS Code.
+- Placeholders: search for `[ADD` and replace each one.
+- Projects: edit the `const P=[...]` list in the script at the bottom.
+- Colors: edit the variables at the top of the `<style>` block.
+- Contact form: connect Formspree or EmailJS in the submit handler (currently opens your email app).
 
-```bash
-npm run build
-```
-
-## Deployment
-This portfolio is ready to deploy on services such as:
-- Vercel
-- Netlify
-- GitHub Pages
-
-After building, deploy the contents of the dist folder or configure your hosting platform to publish the built app.
-
-## Where to update personal information
-Main content is in [src/App.tsx](src/App.tsx). Update sections including:
-- Hero
-- About
-- Profile
-- Skills
-- Experience
-- Education
-- Projects
-- Contact information
-
-## Where to replace images
-Use the files in [public/images](public/images):
-- profile-placeholder.svg
-- project-breast-cancer.svg
-- project-housing-clustering.svg
-- project-placeholder.svg
-
-Also update the browser metadata and social preview in:
-- [index.html](index.html)
-- [public/favicon.svg](public/favicon.svg)
-- [public/og-image.svg](public/og-image.svg)
-
-## Where to add new projects
-Add or edit project objects in [src/App.tsx](src/App.tsx). Each project object includes:
-- name
-- description
-- challenge
-- solution
-- role
-- technologies
-- features
-- GitHub link
-- live demo link
-
-## Contact form integration
-The form is UI-ready and validated, but it does not send emails until an integration is connected. Common options:
-- Formspree
-- EmailJS
-- Netlify Forms
-- Custom backend endpoint
-
-## Notes
-Some details such as experience dates, languages, and availability are intentionally marked as placeholders because no exact data was provided in the brief.
+## Deploy (free)
+Upload the folder to GitHub Pages, Netlify or Vercel.
